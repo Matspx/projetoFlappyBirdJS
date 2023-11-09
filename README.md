@@ -1,4 +1,4 @@
-﻿# projetoFlappyBirdJS
+
 <h1 align="center"> Flappy Bird </h1>
 
 <p align="center">
