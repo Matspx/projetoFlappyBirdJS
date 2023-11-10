@@ -81,8 +81,14 @@ function Passaro(alturaJogo, pontuacao){
     this.setY = y => this.elemento.style.bottom = `${y}px`
     this.getAltura = () => this.elemento.clientHeight
 
-    window.onkeydown = e => voando = true
-    window.onkeyup = e => voando = false
+    window.onkeydown = e => {
+        voando = true
+        this.elemento.style.transform = "rotate(-30deg)"
+    } 
+    window.onkeyup = e => {
+        voando = false
+        this.elemento.style.transform = "rotate(0deg)"
+    } 
 
     this.animar = () => {
         const alturaMax = alturaJogo - this.getAltura()
